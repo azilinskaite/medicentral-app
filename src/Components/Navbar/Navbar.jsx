@@ -5,11 +5,12 @@ import MedicentralLogoNav from "../../Assets/MedicentralLogoNav.svg";
 import MedicentralLogoS from "../../Assets/MedicentalLogoS.png";
 import BurgerIcon from "../../Assets/Burger-icon.png";
 
-function Navbar({ showNavRight = true }) {
+function Navbar({ showNavRight = true, toggleDashboard }) {
   return (
     <header className="header">
       <div className="navbar-left">
-      <button className="burger-menu">
+        {/* button manages the state od the dashboard */}
+      <button className="burger-menu" onClick={toggleDashboard}>
         <img src={BurgerIcon} alt="Menu" />
       </button>
       <Link to="/" className="navbar-logo">

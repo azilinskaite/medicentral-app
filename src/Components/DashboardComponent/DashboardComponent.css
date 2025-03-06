@@ -20,7 +20,6 @@
       margin-bottom: 1rem;
       font-weight: var(--font-weight-semi-bold);
     }
-    /* FIX ALIGNMENT! */
     .dashboard-close-btn {
       display: none;
       font-size: 3rem;
